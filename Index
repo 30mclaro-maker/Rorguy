@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rory McLaughlin - Tennis Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e9f5e9;
+      color: #333;
+    }
+
+    /* Header Tennis Court Look */
+    header {
+      text-align: center;
+      background: #006400;
+      color: white;
+      padding: 2rem 1rem;
+      border-bottom: 8px solid white;
+      position: relative;
+    }
+
+    header::before,
+    header::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: white;
+    }
+
+    header::before {
+      top: 0;
+    }
+
+    header::after {
+      bottom: 0;
+    }
+
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      margin-top: 0.5rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .stat-box {
+      padding: 1rem;
+      border: 2px solid #006400;
+      border-radius: 50%;
+      background: #f9fff9;
+      width: 120px;
+      height: 120px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .stat-box::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 100%;
+      background: yellow;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #006400;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Rory McLaughlin Profile Picture">
+    <h1>Rory McLaughlin</h1>
+    <h2>Dexter Southfield</h2>
+  </header>
+
+  <section>
+    <h2>My Tennis Stats</h2>
+    <div class="stats">
+      <div class="stat-box">
+        <h3>UTR</h3>
+        <p>—</p>
+      </div>
+      <div class="stat-box">
+        <h3>Record</h3>
+        <p>—</p>
+      </div>
+      <div class="stat-box">
+        <h3>Tournaments</h3>
+        <p>—</p>
+      </div>
+      <div class="stat-box">
+        <h3>Favorite Shot</h3>
+        <p>—</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Videos</h2>
+    <p>Highlights and match play:</p>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Rory McLaughlin | Tennis Profile</p>
+  </footer>
+</body>
+</html>
