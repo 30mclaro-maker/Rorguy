@@ -90,8 +90,10 @@
       align-items: center;
       font-weight: bold;
       position: relative;
+      overflow: hidden;
     }
 
+    /* Tennis ball seam behind text */
     .stat-box::before {
       content: "";
       position: absolute;
@@ -101,6 +103,13 @@
       left: 50%;
       transform: translateX(-50%);
       border-radius: 2px;
+      z-index: 0; /* behind text */
+    }
+
+    .stat-box h3,
+    .stat-box p {
+      position: relative;
+      z-index: 1; /* text above seam */
     }
 
     iframe {
@@ -132,10 +141,6 @@
       <div class="stat-box">
         <h3>UTR</h3>
         <p>4.61</p>
-      </div>
-      <div class="stat-box">
-        <h3>Record</h3>
-        <p>—</p>
       </div>
       <div class="stat-box">
         <h3>Tournaments</h3>
